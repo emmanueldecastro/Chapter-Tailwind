@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+.figure {
+    @apply text-center mx-auto h-[300px]
+}
+.figure-2{
+    @apply text-center mx-auto h-[600px]
+}
+.f-t{
+    @apply text-center;
+}
