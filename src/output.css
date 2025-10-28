@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.15 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -1424,14 +1423,15 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
+.figure {
+  margin-inline: auto;
+  height: 300px;
+  text-align: center;
 }
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
+.figure-2 {
+  margin-inline: auto;
+  height: 600px;
+  text-align: center;
 }
 @property --tw-gradient-from {
   syntax: "<color>";
