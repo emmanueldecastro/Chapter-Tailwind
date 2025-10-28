@@ -6,36 +6,34 @@
     <title>Sample Website</title>
     <link rel="stylesheet" href="/src/output.css" />
   </head>
-  <body class="bg-[#f5f5dd]">
+  <body class="">
     <header
       class="fixed top-0 left-0 w-full flex items-center justify-between pb-4 md:pb-5 mb-3 shadow-sm shadow-black z-30 bg-[#C8AE7E] bg-opacity-80"
     >
-      <!-- LEFT SIDE: Logo + Title -->
       <div
         class="flex items-center pl-3 md:pl-8 lg:pl-10 pt-4 md:pt-5 space-x-3"
       >
-        <a href="/" class="flex items-center space-x-3" aria-label="Home">
+        <a href="" class="flex items-center space-x-3" aria-label="Home">
           <img
             src="/Pictures/software-development.png"
             alt="Logo"
             class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain"
           />
           <h1
-            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black"
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#996515]"
           >
             Software Engineering
           </h1>
         </a>
       </div>
 
-      <!-- RIGHT SIDE: Chapter Navigation -->
       <nav
         class="pr-4 sm:pr-6 md:pr-8 lg:pr-10 pt-4 md:pt-5 relative"
         aria-label="Chapter Navigation"
       >
         <details class="group">
           <summary
-            class="list-none cursor-pointer select-none text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-black bg-[#c3b091] rounded-xl px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 shadow-black shadow-sm whitespace-nowrap hover:bg-[#b89f7a] transition-colors duration-300"
+            class="list-none cursor-pointer select-none text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-[#996515] bg-[#c3b091] rounded-xl px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 shadow-black shadow-sm whitespace-nowrap hover:bg-[#b89f7a] transition-colors duration-300"
           >
             Chapter 1
           </summary>
@@ -45,37 +43,73 @@
           >
             <li>
               <a
-                href="#SoftwareP"
+                href="#intro"
                 class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
                 >Introduction</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#1.1"
                 class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
                 >1.1 Professional software development</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#1.1.1"
                 class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
                 >1.1.1 Software engineering</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#1.1.2"
                 class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
                 >1.1.2 Software engineering diversity</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#1.1.3"
                 class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
                 >1.1.3 Software engineering and the Web</a
+              >
+            </li>
+            <li>
+              <a
+                href="#SE"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >Software Engineering Ethics</a
+              >
+            </li>
+            <li>
+              <a
+                href="#CS"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >Case Studies</a
+              >
+            </li>
+            <li>
+              <a
+                href="#1.3.1"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >1.3.1 An insulin pump control system</a
+              >
+            </li>
+            <li>
+              <a
+                href="#1.3.2"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >1.3.2 A patient information system <br />
+                for mental health care</a
+              >
+            </li>
+            <li>
+              <a
+                href="#1.3.3"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >1.3.3 A wilderness weather station</a
               >
             </li>
           </ul>
@@ -86,10 +120,8 @@
     <main class="ml-5 mr-5 p-5 mt-20 tracking-widest">
       <section>
         <article class="">
-          <h1
-            class="bg-[#C8AE7E] shadow-sm shadow-black z-30 text-center p-2.5 ml-1 mr-1 mt-3 rounded-xl text-[#996515]"
-          >
-            <strong>INTRODUCTION</strong>
+          <h1 class="h1">
+            <strong id="intro">INTRODUCTION</strong>
           </h1>
           <p class="p">
             We can’t run the modern world without software. National
@@ -159,7 +191,7 @@
             <img src="imgs/history.png" />
           </figure>
           <h1 class="sub">
-            <strong>1.1 Professional software development</strong>
+            <strong id="1.1">1.1 Professional software development</strong>
           </h1>
           <p class="p">
             Lots of people write programs. People in business write spreadsheet
@@ -278,7 +310,7 @@
         </article>
         <article>
           <h1 class="text-[#996515] mt-5">
-            <strong> 1.1.1 Software engineering </strong>
+            <strong id="1.1.1"> 1.1.1 Software engineering </strong>
           </h1>
           <p class="p">
             Software engineering is an engineering discipline that is concerned
@@ -454,7 +486,7 @@
         </article>
         <article>
           <h1 class="sub">
-            <strong> 1.1.2 Software engineering diversity </strong>
+            <strong id="1.1.2"> 1.1.2 Software engineering diversity </strong>
           </h1>
           <p class="p">
             Software engineering is a systematic approach to the production of
@@ -623,7 +655,7 @@
         </article>
         <article>
           <h1 class="sub">
-            <strong>1.1.3 Software engineering and the Web</strong>
+            <strong id="1.1.3">1.1.3 Software engineering and the Web</strong>
           </h1>
           <p class="p">
             The development of the World Wide Web has had a profound effect on
@@ -719,10 +751,8 @@
         </article>
       </section>
       <section>
-        <h1
-          class="bg-[#C8AE7E] shadow-sm shadow-black z-30 text-center p-2.5 ml-1 mr-1 mt-3 rounded-xl text-[#996515]"
-        >
-          <strong> Software engineering ethics</strong>
+        <h1 class="h1">
+          <strong id="SE"> Software Engineering Ethics</strong>
         </h1>
         <p class="p">
           Like other engineering disciplines, software engineering is carried
@@ -743,28 +773,604 @@
         </p>
         <ol class="ol">
           <li class="pb-3">
-            Confidentiality You should normally respect the confidentiality of
-            your employers or clients irrespective of whether or not a formal
-            confidentiality agreement has been signed
+            <strong>Confidentiality</strong> You should normally respect the
+            confidentiality of your employers or clients irrespective of whether
+            or not a formal confidentiality agreement has been signed
           </li>
           <li class="pb-3">
-            Competence You should not misrepresent your level of competence. You
-            should not knowingly accept work that is outside your competence.
+            <strong>Competence</strong> You should not misrepresent your level
+            of competence. You should not knowingly accept work that is outside
+            your competence.
           </li>
           <li class="pb-3">
-            Intellectual property rights You should be aware of local laws
-            governing the use of intellectual property such as patents and
-            copyright. You should be careful to ensure that the intellectual
-            property of employers and clients is protected.
+            <strong> Intellectual property rights</strong> You should be aware
+            of local laws governing the use of intellectual property such as
+            patents and copyright. You should be careful to ensure that the
+            intellectual property of employers and clients is protected.
           </li>
           <li class="pb-3">
-            Computer misuse You should not use your technical skills to misuse
-            other people’s computers. Computer misuse ranges from relatively
-            trivial (game playing on an employer’s machine, say) to extremely
-            serious (dissemination of viruses or other malware).
+            <strong>Computer misuse</strong> You should not use your technical
+            skills to misuse other people’s computers. Computer misuse ranges
+            from relatively trivial (game playing on an employer’s machine, say)
+            to extremely serious (dissemination of viruses or other malware).
           </li>
         </ol>
+        <figure class="img">
+          <img src="imgs/1.3.png" alt="" />
+        </figure>
+        <p class="p-img">
+          <strong
+            >Figure 1.3 The ACM/IEEE Code of Ethics (© IEEE/ACM 1999)</strong
+          >
+        </p>
+        <p class="p">
+          Professional societies and institutions have an important role to play
+          in setting ethical standards. Organizations such as the ACM, the IEEE
+          (Institute of Electrical and Electronic Engineers), and the British
+          Computer Society publish a code of professional conduct or code of
+          ethics. Members of these organizations undertake to follow that code
+          when they sign up for membership. These codes of conduct are generally
+          concerned with fundamental ethical behavior.
+        </p>
+        <p class="p">
+          Professional associations, notably the ACM and the IEEE, have
+          cooperated to produce a joint code of ethics and professional
+          practice. This code exists in both a short form, shown in Figure 1.3,
+          and a longer form (Gotterbarn et al., 1999) that adds detail and
+          substance to the shorter version. The rationale behind this code is
+          summarized in the first two paragraphs of the longer form:
+        </p>
+        <p class="text-sm mt-5 text-justify text-[#996515] indent-0">
+          Computers have a central and growing role in commerce, industry,
+          government, medicine, education, entertainment and society at large.
+          Software engineers are those who contribute by direct participation or
+          by teaching, to the analysis, specification, design, development,
+          certification, maintenance and testing of software systems. Because of
+          their roles in developing software systems, software engineers have
+          significant opportunities to do good or cause harm, to enable others
+          to do good or cause harm, or to influence others to do good or cause
+          harm. To ensure, as much as possible, that their efforts will be used
+          for good, software engineers must commit themselves to making software
+          engineering a beneficial and respected profession. In accordance with
+          that commitment, software engineers shall adhere to the following Code
+          of Ethics and Professional Practice.
+        </p>
+        <p class="text-sm mt-5 text-justify text-[#996515] indent-0">
+          The Code contains eight Principles related to the behaviour of and
+          decisions made by professional software engineers, including
+          practitioners, educators, managers, supervisors and policy makers, as
+          well as trainees and students of the profession. The Principles
+          identify the ethically responsible relationships in which individuals,
+          groups, and organizations participate and the primary obligations
+          within these relationships. The Clauses of each Principle are
+          illustrations of some of the obligations included in these
+          relationships. These obligations are founded in the software
+          engineer’s humanity, in special care owed to people affected by the
+          work of software engineers, and the unique elements of the practice of
+          software engineering. The Code prescribes these as obligations of
+          anyone claiming to be or aspiring to be a software engineer.
+        </p>
+        <p class="p">
+          In any situation where different people have different views and
+          objectives you are likely to be faced with ethical dilemmas. For
+          example, if you disagree, in principle, with the policies of more
+          senior management in the company, how should you react? Clearly, this
+          depends on the particular individuals and the nature of the
+          disagreement. Is it best to argue a case for your position from within
+          the organization or to resign in principle? If you feel that there are
+          problems with a software project, when do you reveal these to
+          management? If you discuss these while they are just a suspicion, you
+          may be overreacting to a situation; if you leave it too late, it may
+          be impossible to resolve the difficulties.
+        </p>
+        <p class="p">
+          Such ethical dilemmas face all of us in our professional lives and,
+          fortunately, in most cases they are either relatively minor or can be
+          resolved without too much difficulty. Where they cannot be resolved,
+          the engineer is faced with, perhaps, another problem. The principled
+          action may be to resign from their job but this may well affect others
+          such as their partner or their children.
+        </p>
+        <p class="p">
+          A particularly difficult situation for professional engineers arises
+          when their employer acts in an unethical way. Say a company is
+          responsible for developing a safety-critical system and, because of
+          time pressure, falsifies the safety validation records. Is the
+          engineer’s responsibility to maintain confidentiality or to alert the
+          customer or publicize, in some way, that the delivered system may be
+          unsafe?
+        </p>
+        <p class="p">
+          The problem here is that there are no absolutes when it comes to
+          safety. Although the system may not have been validated according to
+          predefined criteria, these criteria may be too strict. The system may
+          actually operate safely throughout its lifetime. It is also the case
+          that, even when properly validated, the system may fail and cause an
+          accident. Early disclosure of problems may result in damage to the
+          employer and other employees; failure to disclose problems may result
+          in damage to others.
+        </p>
+        <p class="p">
+          You must make up your own mind in these matters. The appropriate
+          ethical position here depends entirely on the views of the individuals
+          who are involved. In this case, the potential for damage, the extent
+          of the damage, and the people affected by the damage should influence
+          the decision. If the situation is very dangerous, it may be justified
+          to publicize it using the national press (say). However, you should
+          always try to resolve the situation while respecting the rights of
+          your employer
+        </p>
+        <p class="p">
+          Another ethical issue is participation in the development of military
+          and nuclear systems. Some people feel strongly about these issues and
+          do not wish to participate in any systems development associated with
+          military systems. Others will work on military systems but not on
+          weapons systems. Yet others feel that national security is an
+          overriding principle and have no ethical objections to working on
+          weapons systems.
+        </p>
+        <p class="p">
+          In this situation, it is important that both employers and employees
+          should make their views known to each other in advance. Where an
+          organization is involved in military or nuclear work, they should be
+          able to specify that employees must be willing to accept any work
+          assignment. Equally, if an employee is taken on and makes clear that
+          they do not wish to work on such systems, employers should not put
+          pressure on them to do so at some later date.
+        </p>
+        <p class="p">
+          The general area of ethics and professional responsibility is becoming
+          more important as software-intensive systems pervade every aspect of
+          work and everyday life. It can be considered from a philosophical
+          standpoint where the basic principles of ethics are considered and
+          software engineering ethics are discussed with reference to these
+          basic principles. This is the approach taken by Laudon (1995) and to a
+          lesser extent by Huff and Martin (1995). Johnson’s text on computer
+          ethics (2001) also approaches the topic from a philosophical
+          perspective.
+        </p>
+        <p class="p">
+          However, I find that this philosophical approach is too abstract and
+          difficult to relate to everyday experience. I prefer the more concrete
+          approach embodied in codes of conduct and practice. I think that
+          ethics are best discussed in a software engineering context and not as
+          a subject in their own right. In this book, therefore, I do not
+          include abstract ethical discussions but, where appropriate, include
+          examples in the exercises that can be the starting point for a group
+          discussion on ethical issues.
+        </p>
+      </section>
+      <section>
+        <article>
+          <h1 class="h1">
+            <strong id="CS"> Case Studies</strong>
+          </h1>
+          <p class="p">
+            To illustrate software engineering concepts, I use examples from
+            three different types of systems throughout the book. The reason why
+            I have not used a single case study is that one of the key messages
+            in this book is that software engineering practice depends on the
+            type of systems being produced. I therefore choose an appropriate
+            example when discussing concepts such as safety and dependability,
+            system modeling, reuse, etc.
+          </p>
+          <p class="p">
+            The three types of systems that I use as case studies are:
+          </p>
+          <ol class="ol">
+            <li class="pb-3">
+              An embedded system This is a system where the software controls a
+              hardware device and is embedded in that device. Issues in embedded
+              systems typically include physical size, responsiveness, power
+              management, etc. The example of an embedded system that I use is a
+              software system to control a medical device.
+            </li>
+            <li class="pb-3">
+              An information system This is a system whose primary purpose is to
+              manage and provide access to a database of information. Issues in
+              information systems include security, usability, privacy, and
+              maintaining data integrity. The example of an information system
+              that I use is a medical records system.
+            </li>
+            <li>
+              A sensor-based data collection system This is a system whose
+              primary purpose is to collect data from a set of sensors and
+              process that data in some way. The key requirements of such
+              systems are reliability, even in hostile environmental conditions,
+              and maintainability. The example of a data collection system that
+              I use is a wilderness weather station.
+            </li>
+          </ol>
+          <p class="p">
+            I introduce each of these systems in this chapter, with more
+            information about each of them available on the Web.
+          </p>
+        </article>
+        <article>
+          <h1 class="sub">
+            <strong id="1.3.1">1.3.1 An insulin pump control system</strong>
+          </h1>
+          <p class="p">
+            An insulin pump is a medical system that simulates the operation of
+            the pancreas (an internal organ). The software controlling this
+            system is an embedded system, which collects information from a
+            sensor and controls a pump that delivers a controlled dose of
+            insulin to a user.
+          </p>
+          <p class="p">
+            People who suffer from diabetes use the system. Diabetes is a
+            relatively common condition where the human pancreas is unable to
+            produce sufficient quantities of a hormone called insulin. Insulin
+            metabolises glucose (sugar) in the blood. The conventional treatment
+            of diabetes involves regular injections of genetically engineered
+            insulin. Diabetics measure their blood sugar levels using an
+            external meter and then calculate the dose of insulin that they
+            should inject.
+          </p>
+          <p class="p">
+            The problem with this treatment is that the level of insulin
+            required does not just depend on the blood glucose level but also on
+            the time of the last insulin injection. This can lead to very low
+            levels of blood glucose (if there is too much insulin) or very high
+            levels of blood sugar (if there is too little insulin). Low blood
+            glucose is, in the short term, a more serious condition as it can
+            result in temporary brain malfunctioning and, ultimately,
+            unconsciousness and death. In the long term, however, continual high
+            levels of blood glucose can lead to eye damage, kidney damage, and
+            heart problems.
+          </p>
+          <p class="p">
+            Current advances in developing miniaturized sensors have meant that
+            it is now possible to develop automated insulin delivery systems.
+            These systems monitor blood sugar levels and deliver an appropriate
+            dose of insulin when required. Insulin delivery systems like this
+            already exist for the treatment of hospital patients. In the future,
+            it may be possible for many diabetics to have such systems
+            permanently attached to their bodies.
+          </p>
+          <p class="p">
+            A software-controlled insulin delivery system might work by using a
+            microsensor embedded in the patient to measure some blood parameter
+            that is proportional to the sugar level. This is then sent to the
+            pump controller. This controller computes the sugar level and the
+            amount of insulin that is needed. It then sends signals to a
+            miniaturized pump to deliver the insulin via a permanently attached
+            needle.
+          </p>
+          <figure class="img">
+            <img src="imgs/1.4.png" alt="" />
+          </figure>
+          <p class="p-img"><strong>Figure 1.4 Insulin pump hardware</strong></p>
+          <figure class="img">
+            <img src="imgs/1.5.png" alt="" />
+          </figure>
+          <p class="p-img">
+            <strong>Figure 1.5 Activity model of the insulin pump</strong>
+          </p>
+          <p class="p">
+            Figure 1.4 shows the hardware components and organization of the
+            insulin pump. To understand the examples in this book, all you need
+            to know is that the blood sensor measures the electrical
+            conductivity of the blood under different conditions and that these
+            values can be related to the blood sugar level. The insulin pump
+            delivers one unit of insulin in response to a single pulse from a
+            controller. Therefore, to deliver 10 units of insulin, the
+            controller sends 10 pulses to the pump. Figure 1.5 is a UML activity
+            model that illustrates how the software transforms an input blood
+            sugar level to a sequence of commands that drive the insulin pump.
+          </p>
+          <p class="p">
+            Clearly, this is a safety-critical system. If the pump fails to
+            operate or does not operate correctly, then the user’s health may be
+            damaged or they may fall into a coma because their blood sugar
+            levels are too high or too low. There are, therefore, two essential
+            high-level requirements that this system must meet:
+          </p>
+          <ol class="ol">
+            <li class="pb-3">
+              The system shall be available to deliver insulin when required.
+            </li>
+            <li>
+              The system shall perform reliably and deliver the correct amount
+              of insulin to counteract the current level of blood sugar.
+            </li>
+          </ol>
+          <figure class="img">
+            <img src="imgs/1.6.png" />
+          </figure>
+          <p class="p-img">
+            <strong>Figure 1.6 The organization of the MHC-PMS</strong>
+          </p>
+          <p class="p">
+            The system must therefore be designed and implemented to ensure that
+            the system always meets these requirements. More detailed
+            requirements and discussions of how to ensure that the system is
+            safe are discussed in later chapters.
+          </p>
+        </article>
+        <article>
+          <h1 class="sub">
+            <strong id="1.3.2">
+              1.3.2 A patient information system for mental health care</strong
+            >
+          </h1>
+          <p class="p">
+            A patient information system to support mental health care is a
+            medical information system that maintains information about patients
+            suffering from mental health problems and the treatments that they
+            have received. Most mental health patients do not require dedicated
+            hospital treatment but need to attend specialist clinics regularly
+            where they can meet a doctor who has detailed knowledge of their
+            problems. To make it easier for patients to attend, these clinics
+            are not just run in hospitals. They may also be held in local
+            medical practices or community centers.
+          </p>
+          <p class="p">
+            The MHC-PMS (Mental Health Care-Patient Management System) is an
+            information system that is intended for use in clinics. It makes use
+            of a centralized database of patient information but has also been
+            designed to run on a PC, so that it may be accessed and used from
+            sites that do not have secure network connectivity. When the local
+            systems have secure network access, they use patient information in
+            the database but they can download and use local copies of patient
+            records when they are disconnected. The system is not a complete
+            medical records system so does not maintain information about other
+            medical conditions. However, it may interact and exchange data with
+            other clinical information systems. Figure 1.6 illustrates the
+            organization of the MHC-PMS.
+          </p>
+          <p class="p">The MHC-PMS has two overall goals:</p>
+          <ol class="ol">
+            <li class="pb-3">
+              To generate management information that allows health service
+              managers to assess performance against local and government
+              targets.
+            </li>
+            <li>
+              To provide medical staff with timely information to support the
+              treatment of patients.
+            </li>
+          </ol>
+          <p class="p">
+            The nature of mental health problems is such that patients are often
+            disorganized so may miss appointments, deliberately or accidentally
+            lose prescriptions and medication, forget instructions, and make
+            unreasonable demands on medical staff. They may drop in on clinics
+            unexpectedly. In a minority of cases, they may be a danger to
+            themselves or to other people. They may regularly change address or
+            may be homeless on a long-term or short-term basis. Where patients
+            are dangerous, they may need to be ‘sectioned’—confined to a secure
+            hospital for treatment and observation.
+          </p>
+          <p class="p">
+            Users of the system include clinical staff such as doctors, nurses,
+            and health visitors (nurses who visit people at home to check on
+            their treatment). Nonmedical users include receptionists who make
+            appointments, medical records staff who maintain the records system,
+            and administrative staff who generate reports
+          </p>
+          <p class="p">
+            The system is used to record information about patients (name,
+            address, age, next of kin, etc.), consultations (date, doctor seen,
+            subjective impressions of the patient, etc.), conditions, and
+            treatments. Reports are generated at regular intervals for medical
+            staff and health authority managers. Typically, reports for medical
+            staff focus on information about individual patients whereas
+            management reports are anonymized and are concerned with conditions,
+            costs of treatment, etc.
+          </p>
+          <p class="p">The key features of the system are:</p>
+          <ol class="ol">
+            <li class="pb-3">
+              <strong>Individual care management</strong> Clinicians can create
+              records for patients, edit the information in the system, view
+              patient history, etc. The system supports data summaries so that
+              doctors who have not previously met a patient can quickly learn
+              about the key problems and treatments that have been prescribed.
+            </li>
+            <li class="pb-3">
+              <strong>Patient monitoring</strong> The system regularly monitors
+              the records of patients that are involved in treatment and issues
+              warnings if possible problems are detected. Therefore, if a
+              patient has not seen a doctor for some time, a warning may be
+              issued. One of the most important elements of the monitoring
+              system is to keep track of patients who have been sectioned and to
+              ensure that the legally required checks are carried out at the
+              right time.
+            </li>
+            <li>
+              <strong>Patient monitoring</strong> The system generates monthly
+              management reports showing the number of patients treated at each
+              clinic, the number of patients who have entered and left the care
+              system, number of patients sectioned, the drugs prescribed and
+              their costs, etc.
+            </li>
+          </ol>
+          <p class="p">
+            Two different laws affect the system. These are laws on data
+            protection that govern the confidentiality of personal information
+            and mental health laws that govern the compulsory detention of
+            patients deemed to be a danger to themselves or others. Mental
+            health is unique in this respect as it is the only medical
+            speciality that can recommend the detention of patients against
+            their will. This is subject to very strict legislative safeguards.
+            One of the aims of the MHC-PMS is to ensure that staff always act in
+            accordance with the law and that their decisions are recorded for
+            judicial review if necessary.
+          </p>
+          <p class="p">
+            As in all medical systems, privacy is a critical system requirement.
+            It is essential that patient information is confidential and is
+            never disclosed to anyone apart from authorized medical staff and
+            the patient themselves. The MHC-PMS is also a safety-critical
+            system. Some mental illnesses cause patients to become suicidal or a
+            danger to other people. Wherever possible, the system should warn
+            medical staff about potentially suicidal or dangerous patients.
+          </p>
+          <figure class="img">
+            <img src="imgs/1.7.png" alt="" />
+          </figure>
+          <p class="p-img">
+            <strong>Figure 1.7 The weather station’s environment</strong>
+          </p>
+          <p class="p">
+            The overall design of the system has to take into account privacy
+            and safety requirements. The system must be available when needed
+            otherwise safety may be compromised and it may be impossible to
+            prescribe the correct medication to patients. There is a potential
+            conflict here—privacy is easiest to maintain when there is only a
+            single copy of the system data. However, to ensure availability in
+            the event of server failure or when disconnected from a network,
+            multiple copies of the data should be maintained. I discuss the
+            trade-offs between these requirements in later chapters.
+          </p>
+        </article>
+        <article>
+          <h1 class="sub">
+            <strong id="1.3.3">1.3.3 A wilderness weather station </strong>
+          </h1>
+          <p class="p">
+            To help monitor climate change and to improve the accuracy of
+            weather forecasts in remote areas, the government of a country with
+            large areas of wilderness decides to deploy several hundred weather
+            stations in remote areas. These weather stations collect data from a
+            set of instruments that measure temperature and pressure, sunshine,
+            rainfall, wind speed, and wind direction.
+          </p>
+          <p class="p">
+            Wilderness weather stations are part of a larger system (Figure
+            1.7), which is a weather information system that collects data from
+            weather stations and makes it available to other systems for
+            processing. The systems in Figure 1.7 are:
+          </p>
+          <ol class="ol">
+            <li class="pb-3">
+              <strong>The weather station system</strong> This is responsible
+              for collecting weather data, carrying out some initial data
+              processing, and transmitting it to the data management system.
+            </li>
+            <li class="pb-3">
+              <strong>The data management and archiving system</strong> This
+              system collects the data from all of the wilderness weather
+              stations, carries out data processing and analysis, and archives
+              the data in a form that can be retrieved by other systems, such as
+              weather forecasting systems.
+            </li>
+            <li>
+              <strong>The station maintenance system</strong> This system can
+              communicate by satellite with all wilderness weather stations to
+              monitor the health of these systems and provide reports of
+              problems. It can update the embedded software in these systems. In
+              the event of system problems, this system can also be used to
+              remotely control a wilderness weather system.
+            </li>
+          </ol>
+          <p class="p">
+            In Figure 1.7, I have used the UML package symbol to indicate that
+            each system is a collection of components and have identified the
+            separate systems, using the UML stereotype «system». The
+            associations between the packages indicate there is an exchange of
+            information but, at this stage, there is no need to define them in
+            any more detail.
+          </p>
+          <p class="p">
+            Each weather station includes a number of instruments that measure
+            weather parameters such as the wind speed and direction, the ground
+            and air temperatures, the barometric pressure, and the rainfall over
+            a 24-hour period. Each of these instruments is controlled by a
+            software system that takes parameter readings periodically and
+            manages the data collected from the instruments.
+          </p>
+          <p class="p">
+            The weather station system operates by collecting weather
+            observations at frequent intervals—for example, temperatures are
+            measured every minute. However, because the bandwidth to the
+            satellite is relatively narrow, the weather station carries out some
+            local processing and aggregation of the data. It then transmits this
+            aggregated data when requested by the data collection system. If,
+            for whatever reason, it is impossible to make a connection, then the
+            weather station maintains the data locally until communication can
+            be resumed.
+          </p>
+          <p class="p">
+            Each weather station is battery-powered and must be entirely
+            self-contained—there are no external power or network cables
+            available. All communications are through a relatively slow-speed
+            satellite link and the weather station must include some mechanism
+            (solar or wind power) to charge its batteries. As they are deployed
+            in wilderness areas, they are exposed to severe environmental
+            conditions and may be damaged by animals. The station software is
+            therefore not just concerned with data collection. It must also:
+          </p>
+          <ol class="ol">
+            <li class="pb-3">
+              Monitor the instruments, power, and communication hardware and
+              report faults to the management system.
+            </li>
+            <li class="pb-3">
+              Manage the system power, ensuring that batteries are charged
+              whenever the environmental conditions permit but also that
+              generators are shut down in potentially damaging weather
+              conditions, such as high wind.
+            </li>
+            <li>
+              Allow for dynamic reconfiguration where parts of the software are
+              replaced with new versions and where backup instruments are
+              switched into the system in the event of system failure.
+            </li>
+          </ol>
+          <p class="p">
+            Because weather stations have to be self-contained and unattended,
+            this means that the software installed is complex, even though the
+            data collection functionality is fairly simple.
+          </p>
+        </article>
       </section>
     </main>
+    <footer class="foot bg-opacity-80">
+      <div class="foot-d">
+        <a
+          href="https://www.facebook.com/beysik.111304"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="/Pictures/facebook.png"
+            alt="Facebook"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
+
+        <a
+          href="https://www.instagram.com/_beysik?igsh=Nnk4YWU4amtmYTZi&utm_source=qr"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="/Pictures/instagram.png"
+            alt="Instagram"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
+
+        <a href="mailto:23-14327@g.batstate-u.edu.ph" aria-label="Email">
+          <img
+            src="/Pictures/mail.png"
+            alt="Email"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
+
+        <a href="tel:+639913892842" aria-label="Telephone">
+          <img
+            src="/Pictures/telephone.png"
+            alt="Telephone"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
+      </div>
+
+      <p class="fp">© 2025 Software Engineering. All rights reserved.</p>
+    </footer>
   </body>
 </html>
