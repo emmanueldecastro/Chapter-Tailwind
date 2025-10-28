@@ -1,225 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sample Website</title>
-  <link rel="stylesheet" href="/src/output.css" />
-</head>
-<body class="flex flex-wrap content-start flex-row bg-[#f5f5dd] min-h-screen overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body
+    class="flex flex-wrap content-start flex-row bg-[#f5f5dd] min-h-screen overflow-x-hidden"
+  >
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full flex items-center justify-between pb-4 md:pb-5 mb-3 shadow-sm shadow-black z-30 bg-[#C8AE7E] bg-opacity-80"
+    >
+      <!-- LEFT SIDE: Logo + Title -->
+      <div
+        class="flex items-center pl-3 md:pl-8 lg:pl-10 pt-4 md:pt-5 space-x-3"
+      >
+        <a href="/" class="flex items-center space-x-3" aria-label="Home">
+          <img
+            src="/Pictures/software-development.png"
+            alt="Logo"
+            class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain"
+          />
+          <h1
+            class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black"
+          >
+            Software Engineering
+          </h1>
+        </a>
+      </div>
 
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 w-full flex items-center justify-between pb-4 md:pb-5 mb-3 shadow-sm shadow-black z-30 bg-[#C8AE7E] bg-opacity-80">
-    
-    <!-- LEFT SIDE: Logo + Title -->
-    <div class="flex items-center pl-3 md:pl-8 lg:pl-10 pt-4 md:pt-5 space-x-3">
-      <a href="/" class="flex items-center space-x-3" aria-label="Home">
-        <img src="/Pictures/software-development.png" alt="Logo" 
-             class="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain" />
-        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black">
-          Software Engineering
-        </h1>
-      </a>
-    </div>
+      <!-- RIGHT SIDE: Chapter Navigation -->
+      <nav
+        class="pr-4 sm:pr-6 md:pr-8 lg:pr-10 pt-4 md:pt-5 relative"
+        aria-label="Chapter Navigation"
+      >
+        <details class="group">
+          <summary
+            class="list-none cursor-pointer select-none text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-black bg-[#c3b091] rounded-xl px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 shadow-black shadow-sm whitespace-nowrap hover:bg-[#b89f7a] transition-colors duration-300"
+          >
+            Chapter 2
+          </summary>
 
-    <!-- RIGHT SIDE: Chapter Navigation -->
-    <nav class="pr-4 sm:pr-6 md:pr-8 lg:pr-10 pt-4 md:pt-5 relative" aria-label="Chapter Navigation">
-      <details class="group">
-        <summary class="list-none cursor-pointer select-none 
-                        text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 
-                        font-bold text-black bg-[#c3b091] rounded-xl 
-                        px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 
-                        shadow-black shadow-sm whitespace-nowrap
-                        hover:bg-[#b89f7a] transition-colors duration-300">
-          Chapter 2
-        </summary>
-
-        <ul class="absolute right-2 mt-2 bg-[#fdfaf3] rounded-lg shadow-md border border-gray-300 
-                   text-black tracking-widest font-medium 
-                   group-open:block hidden 
-                   w-auto min-w-[16rem] max-w-100 px-1 py-1 
-                   whitespace-nowrap overflow-hidden">
-          <li><a href="#SoftwareP" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.0 Software Process</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.1 Software Process Models</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.1.1 The Waterfall Development</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.1.2 Incremental Development</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.1.3 Reuse-Oriented Software Engineering</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.2 Process Activities</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.2.1 Software Specification</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.2.2 Software Design and Implementation</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.2.3 Software Validation</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.2.4 Software Evolution</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.3 Coping With Change</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.3.1 Prototyping</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.3.2 Incremental Delivery</a></li>
-          <li><a href="#" class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.3.3 The Boehm's Spiral Model</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">2.4 The Rational Unified Process</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">Keypoints</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">Further Readings</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">Exercises</a></li>
-          <li><a href="#" class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200">References</a></li>
-        </ul>
-      </details>
-    </nav>
-
-  </header>
-
-  <!-- MAIN CONTENT AREA (Empty for now) -->
-  <main class="flex-1 p-4 text-[#996515]">
-    <section>
-      <h1 class="mt-1 text-xl font-bold tracking-widest pt-15" id="SoftwareP">2.0 Software Processes</h1>
-      <article class="tracking-widest p-3 indent-8 text-justify">
-        <p>A software process is a set of related activities that leads to the production of a software product. These activities may involve the development of software from scratch
-in a standard programming language like Java or C. However, business applications
-are not necessarily developed in this way. New business software is now often developed by extending and modifying existing systems or by configuring and integrating
-off-the-shelf software or system components.</p>
-        <br><p>There are many different software processes but all must include four activities
-that are fundamental to software engineering:</p>
-      </article>
-      <article class="tracking-widest pl-8">
-        <ol class="list-decimal list-inside space-y-2 text-justify">
-        <li>
-            <strong>Software specification:</strong> The functionality of the software and constraints on its
-            operation must be defined.</li>
-        <li>
-            <strong>Software design and implementation:</strong> The software to meet the specification
-            must be produced.</li>
-        <li>
-            <strong>Software validation:</strong> The software must be validated to ensure that it does what
-            the customer wants.</li>
-        <li>
-            <strong>Software evolution:</strong> The software must evolve to meet changing customer needs.</li>
-        </ol>
-      </article>
-      <article class="tracking-widest p-3 indent-8 text-justify">
-            <p>In some form, these activities are part of all software processes. In practice, of
-    course, they are complex activities in themselves and include sub-activities such as
-    requirements validation, architectural design, unit testing, etc. There are also supporting process activities
-    such as documentation and software configuration management.</p>
-            <br><p>When we describe and discuss processes, we usually talk about the activities in
-        these processes such as specifying a data model, designing a user interface, etc., and
-        the ordering of these activities. However, as well as activities, process descriptions
-        may also include:</p>
-      </article>
-      <article class="tracking-widest pl-8">
-        <ol class="list-decimal list-inside space-y-2 text-justify">
-        <li>
-            Products, which are the outcomes of a process activity. For example, the outcome of the activity of architectural design may be a model of the software
-            architecture.
+          <ul
+            class="absolute right-2 mt-2 bg-[#fdfaf3] rounded-lg shadow-md border border-gray-300 text-black tracking-widest font-medium group-open:block hidden w-auto min-w-[16rem] max-w-100 px-1 py-1 whitespace-nowrap overflow-hidden"
+          >
+            <li>
+              <a
+                href="#SoftwareP"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.0 Software Process</a
+              >
             </li>
-        <li>
-            Roles, which reflect the responsibilities of the people involved in the process.
-            Examples of roles are project manager, configuration manager, programmer, etc.</li>
-        <li>
-            Pre- and post-conditions, which are statements that are true before and after a
-            process activity has been enacted or a product produced. For example, before
-            architectural design begins, a pre-condition may be that all requirements have
-            been approved by the customer; after this activity is finished, a post-condition
-            might be that the UML models describing the architecture have been reviewed.</li>
-        </ol>
-      </article>
-      <article class="tracking-widest p-3 indent-8 text-justify">
-            <p>Software processes are complex and, like all intellectual and creative processes,
-            rely on people making decisions and judgments. There is no ideal process and most
-            organizations have developed their own software development processes. Processes
-            have evolved to take advantage of the capabilities of the people in an organization
-            and the specific characteristics of the systems that are being developed.</p>
-            <br><p>For some systems, such as critical systems, a very structured development process is required.
-            For business systems, with rapidly changing requirements, a less formal, flexible
-            process is likely to be more effective.
-            </p>
-            <br><p>Sometimes, software processes are categorized as either plan-driven or agile
-            processes. Plan-driven processes are processes where all of the process activities are
-            planned in advance and progress is measured against this plan. In agile processes,
-            which I discuss in Chapter 3, planning is incremental and it is easier to change the
-            process to reflect changing customer requirements. <br><br>As Boehm and Turner (2003)
-            discuss, each approach is suitable for different types of software. Generally, you
-            need to find a balance between plan-driven and agile processes.</p>
-            <br><p>Although there is no ‘ideal’ software process, there is scope for improving the
-            software process in many organizations. Processes may include outdated techniques
-            or may not take advantage of the best practice in industrial software engineering.
-            Indeed, many organizations still do not take advantage of software engineering
-            methods in their software development.</p>
-            <br><p>Software processes can be improved by process standardization where the diversity in software processes across an organization is reduced. This leads to improved
-            communication and a reduction in training time, and makes automated process support more economical. Standardization is also an important first step in introducing
-            new software engineering methods and techniques and good software engineering
-            practice. I discuss software process improvement in more detail in Chapter 26.</p>
-      </article>
-    </section>
-        <h1 class="mt-1 text-xl font-bold tracking-widest pt-3">2.1 Software Process Models</h1>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.1 Software Process Models</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.1.1 The Waterfall Development</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.1.2 Incremental Development</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.1.3 Reuse-Oriented Software Engineering</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.2 Process Activities</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.2.1 Software Specification</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.2.2 Software Design and Implementation</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.2.3 Software Validation</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.2.4 Software Evolution</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.3 Coping With Change</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.3.1 Prototyping</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.3.2 Incremental Delivery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.3.3 The Boehm's Spiral Model</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >2.4 The Rational Unified Process</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >Keypoints</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >Further Readings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >Exercises</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold block px-4 py-2 hover:bg-[#c3b091] rounded-md transition-colors duration-200"
+                >References</a
+              >
+            </li>
+          </ul>
+        </details>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT AREA (Empty for now) -->
+    <main class="flex-1 p-4 text-[#996515]">
+      <section>
+        <h1 class="mt-1 text-xl font-bold tracking-widest pt-15" id="SoftwareP">
+          2.0 Software Processes
+        </h1>
         <article class="tracking-widest p-3 indent-8 text-justify">
-            <p>As I explained in Chapter 1, a software process model is a simplified representation
-            of a software process. Each process model represents a process from a particular perspective, and thus provides only partial information about that process. For example,
-            a process activity model shows the activities and their sequence but may not show
-            the roles of the people involved in these activities. In this section, I introduce a number of very general process models (sometimes called ‘process paradigms’) and
-            present these from an architectural perspective. That is, we see the framework of the
-            process but not the details of specific activities.</p>
-            <br><p>These generic models are not definitive descriptions of software processes. Rather,
-            they are abstractions of the process that can be used to explain different approaches to
-            software development. You can think of them as process frameworks that may be
-            extended and adapted to create more specific software engineering processes.</p>
-            <br><p class="indent-0">The process models that I cover here are:</p>
+          <p>
+            A software process is a set of related activities that leads to the
+            production of a software product. These activities may involve the
+            development of software from scratch in a standard programming
+            language like Java or C. However, business applications are not
+            necessarily developed in this way. New business software is now
+            often developed by extending and modifying existing systems or by
+            configuring and integrating off-the-shelf software or system
+            components.
+          </p>
+          <br />
+          <p>
+            There are many different software processes but all must include
+            four activities that are fundamental to software engineering:
+          </p>
         </article>
         <article class="tracking-widest pl-8">
+          <ol class="list-decimal list-inside space-y-2 text-justify">
+            <li>
+              <strong>Software specification:</strong> The functionality of the
+              software and constraints on its operation must be defined.
+            </li>
+            <li>
+              <strong>Software design and implementation:</strong> The software
+              to meet the specification must be produced.
+            </li>
+            <li>
+              <strong>Software validation:</strong> The software must be
+              validated to ensure that it does what the customer wants.
+            </li>
+            <li>
+              <strong>Software evolution:</strong> The software must evolve to
+              meet changing customer needs.
+            </li>
+          </ol>
+        </article>
+        <article class="tracking-widest p-3 indent-8 text-justify">
+          <p>
+            In some form, these activities are part of all software processes.
+            In practice, of course, they are complex activities in themselves
+            and include sub-activities such as requirements validation,
+            architectural design, unit testing, etc. There are also supporting
+            process activities such as documentation and software configuration
+            management.
+          </p>
+          <br />
+          <p>
+            When we describe and discuss processes, we usually talk about the
+            activities in these processes such as specifying a data model,
+            designing a user interface, etc., and the ordering of these
+            activities. However, as well as activities, process descriptions may
+            also include:
+          </p>
+        </article>
+        <article class="tracking-widest pl-8">
+          <ol class="list-decimal list-inside space-y-2 text-justify">
+            <li>
+              Products, which are the outcomes of a process activity. For
+              example, the outcome of the activity of architectural design may
+              be a model of the software architecture.
+            </li>
+            <li>
+              Roles, which reflect the responsibilities of the people involved
+              in the process. Examples of roles are project manager,
+              configuration manager, programmer, etc.
+            </li>
+            <li>
+              Pre- and post-conditions, which are statements that are true
+              before and after a process activity has been enacted or a product
+              produced. For example, before architectural design begins, a
+              pre-condition may be that all requirements have been approved by
+              the customer; after this activity is finished, a post-condition
+              might be that the UML models describing the architecture have been
+              reviewed.
+            </li>
+          </ol>
+        </article>
+        <article class="tracking-widest p-3 indent-8 text-justify">
+          <p>
+            Software processes are complex and, like all intellectual and
+            creative processes, rely on people making decisions and judgments.
+            There is no ideal process and most organizations have developed
+            their own software development processes. Processes have evolved to
+            take advantage of the capabilities of the people in an organization
+            and the specific characteristics of the systems that are being
+            developed.
+          </p>
+          <br />
+          <p>
+            For some systems, such as critical systems, a very structured
+            development process is required. For business systems, with rapidly
+            changing requirements, a less formal, flexible process is likely to
+            be more effective.
+          </p>
+          <br />
+          <p>
+            Sometimes, software processes are categorized as either plan-driven
+            or agile processes. Plan-driven processes are processes where all of
+            the process activities are planned in advance and progress is
+            measured against this plan. In agile processes, which I discuss in
+            Chapter 3, planning is incremental and it is easier to change the
+            process to reflect changing customer requirements. <br /><br />As
+            Boehm and Turner (2003) discuss, each approach is suitable for
+            different types of software. Generally, you need to find a balance
+            between plan-driven and agile processes.
+          </p>
+          <br />
+          <p>
+            Although there is no ‘ideal’ software process, there is scope for
+            improving the software process in many organizations. Processes may
+            include outdated techniques or may not take advantage of the best
+            practice in industrial software engineering. Indeed, many
+            organizations still do not take advantage of software engineering
+            methods in their software development.
+          </p>
+          <br />
+          <p>
+            Software processes can be improved by process standardization where
+            the diversity in software processes across an organization is
+            reduced. This leads to improved communication and a reduction in
+            training time, and makes automated process support more economical.
+            Standardization is also an important first step in introducing new
+            software engineering methods and techniques and good software
+            engineering practice. I discuss software process improvement in more
+            detail in Chapter 26.
+          </p>
+        </article>
+      </section>
+      <h1 class="mt-1 text-xl font-bold tracking-widest pt-3">
+        2.1 Software Process Models
+      </h1>
+      <article class="tracking-widest p-3 indent-8 text-justify">
+        <p>
+          As I explained in Chapter 1, a software process model is a simplified
+          representation of a software process. Each process model represents a
+          process from a particular perspective, and thus provides only partial
+          information about that process. For example, a process activity model
+          shows the activities and their sequence but may not show the roles of
+          the people involved in these activities. In this section, I introduce
+          a number of very general process models (sometimes called ‘process
+          paradigms’) and present these from an architectural perspective. That
+          is, we see the framework of the process but not the details of
+          specific activities.
+        </p>
+        <br />
+        <p>
+          These generic models are not definitive descriptions of software
+          processes. Rather, they are abstractions of the process that can be
+          used to explain different approaches to software development. You can
+          think of them as process frameworks that may be extended and adapted
+          to create more specific software engineering processes.
+        </p>
+        <br />
+        <p class="indent-0">The process models that I cover here are:</p>
+      </article>
+      <article class="tracking-widest pl-8">
         <ol class="list-decimal list-inside space-y-2 text-justify">
-        <li>
-            The <strong>Waterfall Model</strong> This takes the fundamental process activities of specification, development, validation, and evolution and represents them as separate
-            process phases such as requirements specification, software design, implementation, testing, and so on.</li>
-        <li>
-            <strong>Incremental Development</strong> This approach interleaves the activities of specification, development, and validation. The system is developed as a series of versions
-            (increments), with each version adding functionality to the previous version.</li>
-        <li>
-            <strong>Reuse-oriented Software Engineering</strong> This approach is based on the existence of
-            a significant number of reusable components. The system development process
-            focuses on integrating these components into a system rather than developing
-            them from scratch.</li>
+          <li>
+            The <strong>Waterfall Model</strong> This takes the fundamental
+            process activities of specification, development, validation, and
+            evolution and represents them as separate process phases such as
+            requirements specification, software design, implementation,
+            testing, and so on.
+          </li>
+          <li>
+            <strong>Incremental Development</strong> This approach interleaves
+            the activities of specification, development, and validation. The
+            system is developed as a series of versions (increments), with each
+            version adding functionality to the previous version.
+          </li>
+          <li>
+            <strong>Reuse-oriented Software Engineering</strong> This approach
+            is based on the existence of a significant number of reusable
+            components. The system development process focuses on integrating
+            these components into a system rather than developing them from
+            scratch.
+          </li>
         </ol>
       </article>
-    <section>
+      <section></section>
+    </main>
 
-    </section>
-  </main>
+    <!-- FOOTER -->
+    <footer
+      class="w-full text-center py-4 text-gray-700 bg-[#C8AE7E] bg-opacity-80 mt-auto flex flex-col items-center space-y-3 sm:space-y-4 md:space-y-5"
+    >
+      <div
+        class="flex flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+      >
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/erick.carenan.1/"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="/Pictures/facebook.png"
+            alt="Facebook"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
 
-<!-- FOOTER -->
-<footer class="w-full text-center py-4 text-gray-700 bg-[#C8AE7E] bg-opacity-80 mt-auto flex flex-col items-center space-y-3 sm:space-y-4 md:space-y-5">
-  <div class="flex flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12">
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/erckcrnn?igsh=cGU0MHhmN2t6b2d4"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="/Pictures/instagram.png"
+            alt="Instagram"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
 
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/erick.carenan.1/" target="_blank" aria-label="Facebook">
-      <img src="/Pictures/facebook.png" alt="Facebook"
-        class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11
-               transform transition-transform duration-300 hover:scale-125 hover:opacity-80">
-    </a>
+        <!-- Email -->
+        <a href="mailto:23-14945@g.batstate-u.edu.ph" aria-label="Email">
+          <img
+            src="/Pictures/mail.png"
+            alt="Email"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
 
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/erckcrnn?igsh=cGU0MHhmN2t6b2d4" target="_blank" aria-label="Instagram">
-      <img src="/Pictures/instagram.png" alt="Instagram"
-        class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11
-               transform transition-transform duration-300 hover:scale-125 hover:opacity-80">
-    </a>
+        <!-- Telephone -->
+        <a href="tel:+63XXXXXXXXXX" aria-label="Telephone">
+          <img
+            src="/Pictures/telephone.png"
+            alt="Telephone"
+            class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80"
+          />
+        </a>
+      </div>
 
-    <!-- Email -->
-    <a href="mailto:23-14945@g.batstate-u.edu.ph" aria-label="Email">
-      <img src="/Pictures/mail.png" alt="Email"
-        class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11
-               transform transition-transform duration-300 hover:scale-125 hover:opacity-80">
-    </a>
-
-    <!-- Telephone -->
-    <a href="tel:+63XXXXXXXXXX" aria-label="Telephone">
-      <img src="/Pictures/telephone.png" alt="Telephone"
-        class="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11
-               transform transition-transform duration-300 hover:scale-125 hover:opacity-80">
-    </a>
-  </div>
-
-  <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-800 font-medium tracking-wide">
-    © 2025 Software Engineering. All rights reserved.
-  </p>
-</footer>
-
-
-
-
-</body>
+      <p
+        class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-800 font-medium tracking-wide"
+      >
+        © 2025 Software Engineering. All rights reserved.
+      </p>
+    </footer>
+  </body>
 </html>

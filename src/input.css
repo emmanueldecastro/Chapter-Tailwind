@@ -1,11 +1,23 @@
 @import "tailwindcss";
 
-.figure {
-    @apply text-center mx-auto h-[300px]
+.p {
+  @apply text-sm mt-5 text-justify text-[#996515] indent-8;
 }
-.figure-2{
-    @apply text-center mx-auto h-[600px]
+
+.h1 {
+  @apply bg-[#C8AE7E] shadow-sm shadow-black z-30 text-center p-2.5 ml-1 mr-1 mt-3 rounded-xl text-[#996515];
 }
-.f-t{
-    @apply text-center;
+.img {
+  @apply flex justify-center mt-10 fill-white drop-shadow-xl/50;
+}
+.p-img {
+  @apply mt-3 text-[#996515] text-center;
+}
+
+.ol {
+  @apply pl-7 mt-5 text-justify list-decimal text-[#996515]  pb-3;
+}
+
+.sub {
+  @apply text-[#996515] mt-5;
 }
