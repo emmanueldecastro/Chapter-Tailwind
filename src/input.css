@@ -1,74 +1,91 @@
 @import "tailwindcss";
 
-.p {
-  @apply text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg mt-5 text-justify text-[#996515] indent-8;
+.sour-gummy {
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
 }
 
-.h1 {
-  @apply bg-[#C8AE7E] shadow-sm shadow-black z-30 text-center p-2.5 ml-1 mr-1 mt-3 rounded-xl text-[#996515]
-          text-base sm:text-lg md:text-xl lg:text-2xl xl:text-2xl;
+.figure {
+    @apply text-center mx-auto h-[300px]
 }
-.index-header {
-  @apply fixed top-0 left-0 w-full flex items-center justify-between mb-3 bg-[#C8AE7E]  z-30 px-3 md:px-8 lg:px-10 p-5 shadow-sm shadow-black;
+.figure-2{
+    @apply text-center mx-auto h-[600px]
 }
-
-.index-c {
-  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#996515] bg-[#C8AE7E] p-15 rounded-4xl shadow-xl/30 bg-[#C8AE7E] transition delay-50 duration-300 ease-in-out hover:-translate-y-1 hover:scale-140 hover:bg-[#C8AE7E] cursor-pointer;
+.f-t{
+    @apply text-center;
 }
 
-.head-6 {
-  @apply rounded-xl px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 text-[#996515] font-bold text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl flex items-center;
+html {
+  scroll-behavior: smooth;
 }
 
-.index-img {
-  @apply w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80;
+
+/* Erick layug(chapter 2) */
+
+.c7body{
+    @apply flex flex-wrap content-start flex-row bg-[#f5f5dd] min-h-screen overflow-x-hidden
+}
+.c7header{
+    @apply fixed top-0 left-0 w-full flex flex-wrap items-center justify-between px-3 sm:px-6 md:px-10 lg:px-16 
+         py-3 sm:py-4 md:py-5 shadow-sm shadow-black z-30 
+        backdrop-blur-sm
 }
 
-.index-1 {
-  @apply mt-28 text-center text-[#996515] font-bold text-5xl;
+.c7logo{
+    @apply w-7 h-7 sm:w-9 sm:h-9 md:w-11 md:h-11 lg:w-12 lg:h-12 xl:w-14 xl:h-14 object-contain 
+    transition-transform duration-300 hover:scale-110
 }
 
-.index-h1 {
-  @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#996515];
+.c7title{
+    @apply text-base sm:text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-black whitespace-nowrap transition-transform duration-300 hover:scale-105
 }
 
-.index-sec {
-  @apply w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain;
+.c7chapter2{
+    @apply list-none cursor-pointer select-none text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold text-black bg-[#c3b091] rounded-xl px-3 sm:px-4 md:px-5 py-1 sm:py-1.5 shadow-black shadow-sm whitespace-nowrap hover:bg-[#b89f7a] transition-all duration-300 hover:scale-105  
 }
 
-.index-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 p-5 xl:h-[71vh] lg:h-[71vh] md:h-[71vh] sm:h-[72vh]  justify-items-center items-center sm:pb-10 mb-2;
-}
-.index-body {
-  @apply bg-[#f5f5dd] xl:overflow-hidden lg:overflow-hidden md:overflow-hidden sm:overflow-hidden;
+.c7ul{
+    @apply absolute right-0 mt-2 bg-[#fdfaf3] rounded-lg shadow-md border border-gray-300 text-black tracking-widest font-medium group-open:block hidden min-w-56 sm:min-w-[16rem] md:min-w-[18rem] lg:min-w-[20rem] px-2 py-2 whitespace-nowrap overflow-hidden z-50
 }
 
-.img {
-  @apply flex justify-center mt-10 fill-white drop-shadow-xl/50;
+.c7list{
+    @apply block px-4 py-2 hover:bg-[#c3b091] rounded-md text-sm
 }
 
-.foot {
-  @apply w-full text-center py-4 text-gray-700 bg-[#C8AE7E]  mt-auto flex flex-col items-center space-y-3 sm:space-y-4 md:space-y-5;
-}
-.foot-d {
-  @apply flex flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12;
+.c7h1{
+    @apply mt-1 text-lg font-bold tracking-widest pt-15 sm:pt-20 md:pt-22 lg:pt-25 xl:pt-28 md:text-xl lg:text-2xl xl:text-3xl
 }
 
-.p-img {
-  @apply mt-3 text-[#996515] text-center 
-          text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg;
+.c7text{
+    @apply tracking-widest p-3 indent-8 text-justify text-base md:text-lg lg:text-xl xl:text-2xl
 }
 
-.fp {
-  @apply text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-gray-800 font-medium tracking-wide;
+.c7h12{
+    @apply mt-1 text-lg font-bold tracking-widest pt-3 md:text-xl lg:text-2xl xl:text-3xl
 }
 
-.ol {
-  @apply pl-7 mt-5 text-justify list-decimal text-[#996515] pb-3
-          text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg;
+.c7ol{
+    @apply list-decimal list-inside space-y-2 text-justify text-base md:text-lg lg:text-xl xl:text-2xl
 }
 
-.sub {
-  @apply text-[#996515] mt-5 
-          text-xs sm:text-sm md:text-base lg:text-lg xl:text-lg;
+.c7img{
+    @apply object-cover rounded-xl shadow-md shadow-gray-500 border border-[#b89f7a] transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-[#b89f7a]
 }
+
+.c7icon{
+    @apply w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 transform transition-transform duration-300 hover:scale-125 hover:opacity-80
+}
+
+.c7footer{
+    @apply w-full text-center py-4 text-gray-700 bg-[#C8AE7E]  mt-auto flex flex-col items-center space-y-3 sm:space-y-4 md:space-y-5
+}
+
+.c7footer2{
+    @apply flex flex-wrap justify-center items-center gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12
+}
+
+.c7grid-sections {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 justify-items-center mt-10;
+}
+
