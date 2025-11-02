@@ -4,26 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
   </head>
-  <body class="bg-[#C8AE7E]">
+  <body class="bg-[#fffffe] tracking-widest montserrat">
     <header
   class="c7header bg-[#C8AE7E] bg-opacity-90  fixed top-0 left-0 w-full z-50">
 
   <div class="flex items-center space-x-3">
     <a href="/" class="flex items-center space-x-3" aria-label="Home">
-      <img src="/Pictures/software-development.png" alt="Logo" width="50px" height="50px"
+      <img src="./Pictures/software-development.png" alt="Logo" width="50px" height="50px"
            class="c7logo" />
-      <h1 class="c7title sour-gummy">
-        Software Engineering
-      </h1>
+      <a href="index.html" class="c7title"><h1>Software Engineering</h1></a>
     </a>
   </div>
 
   <nav class="relative mt-2 sm:mt-0" aria-label="Chapter Navigation">
     <details class="group">
       <summary
-        class="c7chapter2 sour-gummy">
+        class="c7chapter2">
         Chapter 7
       </summary>
 
@@ -50,110 +51,119 @@
 
 
 
-    <main class="mt-20">
+    <main class="mt-20 text-justify font-sans">
       
-  <section >
-    <div class="space-y-8">
-        <article id="design" class="bg-amber-800 text-white border rounded-lg p-10 m-5 text-base leading-7 mt-30 scroll-mt-80">
-            <section >
-                <h1  class=" text-center mb-4 border-b-2 pb-2 font-bold text-2xl">DESIGN IMPLEMENTATION</h1>
-            </section>
-            <p >
-                Software design and implementation is the stage in the software
-                engineering process at which an executable software system is
-                developed. For some simple systems, software design and
-                implementation is software engineering, and all other activities are
-                merged with this process. However, for large systems, software
-                design and implementation is only one of a set of processes
-                (requirements engineering, verification and validation, etc.)
-                involved in software engineering.<br/>
-            </p>
-            <p>
-                Software design and implementation activities are invariably
-                interleaved. Software design is a creative activity in which you
-                identify software components and their relationships, based on a
-                customer’s requirements. Implementation is the process of realizing
-                the design as a program. Sometimes, there is a separate design stage
-                and this design is modeled and documented. At other times, a design
-                is in the programmer’s head or roughly sketched on a whiteboard or
-                sheets of paper. Design is about how to solve a problem, so there is
-                always a design process. However, it isn’t always necessary or
-                appropriate to describe the design in detail using the UML or other
-                design description language.
-            </p>
-            <p>
-                Design and implementation are closely linked and you should normally
-                take implementation issues into account when developing a design.
-                For example, using the UML to document a design may be the right
-                thing to do if you are programming in an object-oriented language
-                such as Java or C#. It is less useful, I think, if you are
-                developing in a dynamically typed language like Python and makes no
-                sense at all if you are implementing your system by configuring an
-                off-the-shelf package. As I discussed in Chapter 3, agile methods
-                usually work from informal sketches of the design and leave many
-                design decisions to programmers.
-            </p>
-            <p class="mt-2">
-                One of the most important implementation decisions that has to be
-                made at an early stage of a software project is whether or not you
-                should buy or build the application software. In a wide range of
-                domains, it is now possible to buy off-the-shelf systems (COTS) that
-                can be adapted and tailored to the users’ requirements. For example,
-                if you want to implement a medical records system, you can buy a
-                package that is already used in hospitals. It can be cheaper and
-                faster to use this approach rather than developing a system in a
-                conventional programming language.
-            </p>
-            <p>
-                When you develop an application in this way, the design process
-                becomes concerned with how to use the configuration features of that
-                system to deliver the system requirements. You don’t usually develop
-                design models of the system, such as models of the system objects
-                and their interactions. I discuss this COTS-based approach to
-                development in Chapter 16.
-            </p>
-            <p>
-                I assume that most readers of this book will have had experience of
-                program design and implementation. This is something that you
-                acquire as you learn to program and master the elements of a
-                programming language like Java or Python. You will have probably
-                learned about good programming practice in the programming languages
-                that you have studied, as well as how to debug programs that you
-                have developed. Therefore, I don’t cover programming topics here.
-                Instead, this chapter has two aims:
-            </p>
-            <ol>
-                <li>
-                    To show how system modeling and architectural design (covered in
-                    Chapters 5 and 6) are put into practice in developing an
-                    object-oriented software design.
-                </li>
-                <li>
-                    To introduce important implementation issues that are not usually
-                    covered in programming books. These include software reuse,
-                    configuration management, and open source development.
-                </li>
-            </ol class="list-decimal">
-            <p>
-                As there are a vast number of different development platforms, the
-                chapter is not biased towards any particular programming language or
-                implementation technology. Therefore, I have presented all examples
-                using the UML rather than in a programming language such as Java or
-                Python.
-            </p>
-        </article>
-    </div>
+  <section class="lg:text-2xl">
+  <div class="space-y-8">
+    <article
+      id="design"
+      class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 mt-30 scroll-mt-80"
+    >
+      <section>
+        <h1
+          class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl"
+        >
+          DESIGN IMPLEMENTATION
+        </h1>
+      </section>
+
+      <p class="paragraph">
+        Software design and implementation is the stage in the software
+        engineering process at which an executable software system is developed.
+        For some simple systems, software design and implementation is software
+        engineering, and all other activities are merged with this process.
+        However, for large systems, software design and implementation is only
+        one of a set of processes (requirements engineering, verification and
+        validation, etc.) involved in software engineering.<br />
+      </p>
+
+      <p class="paragraph">
+        Software design and implementation activities are invariably interleaved.
+        Software design is a creative activity in which you identify software
+        components and their relationships, based on a customer’s requirements.
+        Implementation is the process of realizing the design as a program.
+        Sometimes, there is a separate design stage and this design is modeled
+        and documented. At other times, a design is in the programmer’s head or
+        roughly sketched on a whiteboard or sheets of paper. Design is about how
+        to solve a problem, so there is always a design process. However, it
+        isn’t always necessary or appropriate to describe the design in detail
+        using the UML or other design description language.
+      </p>
+
+      <p class="paragraph">
+        Design and implementation are closely linked and you should normally take
+        implementation issues into account when developing a design. For example,
+        using the UML to document a design may be the right thing to do if you
+        are programming in an object-oriented language such as Java or C#. It is
+        less useful, I think, if you are developing in a dynamically typed
+        language like Python and makes no sense at all if you are implementing
+        your system by configuring an off-the-shelf package. As I discussed in
+        Chapter 3, agile methods usually work from informal sketches of the design
+        and leave many design decisions to programmers.
+      </p>
+
+      <p class="paragraph">
+        One of the most important implementation decisions that has to be made at
+        an early stage of a software project is whether or not you should buy or
+        build the application software. In a wide range of domains, it is now
+        possible to buy off-the-shelf systems (COTS) that can be adapted and
+        tailored to the users’ requirements. For example, if you want to
+        implement a medical records system, you can buy a package that is already
+        used in hospitals. It can be cheaper and faster to use this approach
+        rather than developing a system in a conventional programming language.
+      </p>
+
+      <p class="paragraph">
+        When you develop an application in this way, the design process becomes
+        concerned with how to use the configuration features of that system to
+        deliver the system requirements. You don’t usually develop design models
+        of the system, such as models of the system objects and their
+        interactions. I discuss this COTS-based approach to development in
+        Chapter 16.
+      </p>
+
+      <p class="paragraph">
+        I assume that most readers of this book will have had experience of
+        program design and implementation. This is something that you acquire as
+        you learn to program and master the elements of a programming language
+        like Java or Python. You will have probably learned about good programming
+        practice in the programming languages that you have studied, as well as
+        how to debug programs that you have developed. Therefore, I don’t cover
+        programming topics here. Instead, this chapter has two aims:
+      </p>
+
+      <ol class="md:text-xl lg:text-xl xl:text-xl p-2">
+        <li>
+          To show how system modeling and architectural design (covered in
+          Chapters 5 and 6) are put into practice in developing an
+          object-oriented software design.
+        </li>
+        <li>
+          To introduce important implementation issues that are not usually
+          covered in programming books. These include software reuse,
+          configuration management, and open source development.
+        </li>
+      </ol>
+
+      <p class="paragraph">
+        As there are a vast number of different development platforms, the chapter
+        is not biased towards any particular programming language or
+        implementation technology. Therefore, I have presented all examples using
+        the UML rather than in a programming language such as Java or Python.
+      </p>
+    </article>
+  </div>
 </section>
 
       
 
-        <section class="scroll-mt-100">
+  <section class="scroll-mt-100">
     <div class="space-y-8">
-        <article id="object" class=" bg-[#634832] text-white border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+        <article id="object" class=" text-[#996515]  border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
             <section>
-                <h1   class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.1 Object-oriented design using the UML</h1>
+                <h1   class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1 Object-oriented design using the UML</h1>
             </section>
-            <p>
+            <p class="paragraph">
                 An object-oriented system is made up of interacting objects that
                 maintain their own local state and provide operations on that state.
                 The representation of the state is private and cannot be accessed
@@ -174,14 +184,14 @@
                 develop a system design from concept to detailed, object-oriented
                 design, there are several things that you need to do:
             </p>
-            <ol class="list-decimal pl-5 space-y-2">
+            <ol class="list-decimal pl-20 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>Understand and define the context and the external interactions with the system.</li>
                 <li>Design the system architecture.</li>
                 <li>Identify the principal objects in the system.</li>
                 <li>Develop design models</li>
                 <li>Specify interfaces</li>
             </ol>
-            <p>
+            <p class="paragraph">
                 Like all creative activities, design is not a clear-cut, sequential
                 process. You develop a design by getting ideas, proposing solutions,
                 and refining these solutions as information becomes available. You
@@ -207,11 +217,11 @@
 
 <section>
     <div class="space-y-8">
-        <article id="system" class="border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+        <article id="system" class=" text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
             <section>
-                <h1  class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.1.1 System context and interactions</h1>
+                <h1  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1.1 System context and interactions</h1>
             </section>
-            <p>
+            <p class="paragraph">
                 The first stage in any software design process is to develop an
                 understanding of the relationships between the software that is
                 being designed and its external environment. This is essential for
@@ -225,11 +235,11 @@
                 for all of the weather stations, and the embedded software in the
                 weather station itself.
             </p>
-            <p class="mb-2">
+            <p class="mb-2 paragraph">
                 System context models and interaction models present complementary
                 views of the relationships between a system and its environment:
             </p>
-            <ol class="list-decimal pl-5 space-y-2">
+            <ol class="list-decimal pl-20 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     A system context model is a structural model that demonstrates the
                     other systems in the environment of the system being developed.
@@ -243,7 +253,7 @@
                     interacts with its environment as it is used.
                 </li>
             </ol>
-            <p>
+            <p class="paragraph">
                 The context model of a system may be represented using associations.
                 Associations simply show that there are some relationships between
                 the entities involved in the association. The nature of the
@@ -252,14 +262,14 @@
                 entities in the system and their associations. This is illustrated
                 in Figure 7.1, which shows that
             </p>
-            <p>
+            <p class="paragraph">
                 the systems in the environment of each weather station are a weather
                 information system, an onboard satellite system, and a control
                 system. The cardinality information on the link shows that there is
                 one control system but several weather stations, one satellite, and
                 one general weather information system.
             </p>
-            <p>
+            <p class="paragraph">
                 When you model the interactions of a system with its environment you
                 should use an abstract approach that does not include too much
                 detail. One way to do this is to use a use case model. As I
@@ -268,7 +278,7 @@
                 an ellipse and the external entity involved in the interaction is
                 represented by a stick figure
             </p>
-            <p>
+            <p class="paragraph">
                 The use case model for the weather station is shown in Figure 7.2.
                 This shows that the weather station interacts with the weather
                 information system to report weather data and the status of the
@@ -277,7 +287,7 @@
                 I explained in Chapter 5, a stick figure is used in the UML to
                 represent other systems as well as human users.
             </p>
-            <p>
+            <p class="paragraph">
                 Each of these use cases should be described in structured natural
                 language. This helps designers identify objects in the system and
                 gives them an understanding of what the system is intended to do. I
@@ -300,7 +310,7 @@
                     />
                 </article>
             </figure>
-            <p>
+            <p class="paragraph">
                 so on. This is shown in Figure 7.3, which describes the Report
                 weather use case from Figure 7.2. Examples of some other use cases
                 are on the Web.
@@ -311,16 +321,13 @@
 
 
 
-
-
-
           <section>
     <div class="space-y-8">
-        <article id="Architectural" class="border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+        <article id="Architectural" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
             <section>
-                <h1  class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.1.2 Architectural design</h1>
+                <h1  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1.2 Architectural design</h1>
             </section>
-            <p>
+            <p class="paragraph">
                 Once the interactions between the software system and the system’s
                 environment have been defined, you use this information as a basis
                 for designing the system architecture. Of course, you need to
@@ -332,8 +339,8 @@
                 <img
                     src="Pictures/pic.png.png"
                     alt="Architectural Diagram 1"
-                    class="mx-auto my-4"
-                    style="max-width: 90%; height: auto;"
+                    class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+                    style="max-width: 50%; height: auto;"
                 />
             </figure>
 
@@ -341,19 +348,19 @@
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi7a_T1yaeFl9UZf2mU5Kshq4PLM9m8MJBIw&ss"
                     alt="Architectural Diagram 2"
-                    class="mx-auto my-4"
-                    style="max-width: 90%; height: auto;"
+                    class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+                    style="max-width: 50%; height: auto;"
                 />
             </figure>
 
-            <p>
+            <p class="paragraph">
                 You identify the major components that make up the system and their
                 interactions, and then may organize the components using an
                 architectural pattern such as a layered or client–server model.
                 However, this is not essential at this stage.
             </p>
 
-            <p>
+            <p class="paragraph">
                 The high-level architectural design for the weather station software
                 is shown in Figure 7.4. The weather station is composed of
                 independent subsystems that communicate by broadcasting messages on
@@ -364,7 +371,7 @@
                 Chapter 6.
             </p>
 
-            <p>
+            <p class="paragraph">
                 For example, when the communications subsystem receives a control
                 command, such as shutdown, the command is picked up by each of the
                 other subsystems, which then shut themselves down in the correct
@@ -374,7 +381,7 @@
                 subsystem.
             </p>
 
-            <p>
+            <p class="paragraph">
                 Figure 7.5 shows the architecture of the data collection subsystem,
                 which is included in Figure 7.4. The Transmitter and Receiver
                 objects are concerned with managing communications and the
@@ -391,10 +398,10 @@
 
          <section>
     <div class="space-y-8">
-        <article  id="OBJECT CLASS" class="border rounded-lg p-10 m-5 text-base leading-7">
-            <h1  class="mb-4 border-b-2 pb-2 font-bold text-xl">7.1.3 Object Class Identification</h1>
+        <article  id="OBJECT CLASS" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+            <h1  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1.3 Object Class Identification</h1>
 
-            <p>
+            <p class="paragraph">
                 By this stage in the design process, you should have some ideas
                 about the essential objects in the system that you are designing. As
                 your understanding of the design develops, you refine these ideas
@@ -412,15 +419,16 @@
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUDer3GU5vZlNTa9XYlLco3cBEUkQf8fBVHQ&s"
                     alt="Weather Instruments"
-                    class="max-w-full h-auto max-h-96 mx-auto" />
+                    class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+                    style="max-width: 50%; height: auto;">
             </figure>
 
-            <p>
+            <p class="paragraph">
                 There have been various proposals made about how to identify object
                 classes in object-oriented systems:
             </p>
 
-            <ol class="list-decimal pl-5">
+            <ol class="list-decimal pl-20 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     Use a grammatical analysis of a natural language description of
                     the system to be constructed. Objects and attributes are nouns;
@@ -443,7 +451,7 @@
                 </li>
             </ol>
 
-            <p>
+            <p class="paragraph">
                 In practice, you have to use several knowledge sources to discover
                 object classes. Object classes, attributes, and operations that are
                 initially identified from the informal system description can be a
@@ -454,7 +462,7 @@
                 existing systems.
             </p>
 
-            <p>
+            <p class="paragraph">
                 In the wilderness weather station, object identification is based on
                 the tangible hardware in the system. I don’t have space to include
                 all the system objects here, but I have shown five object classes in
@@ -464,7 +472,7 @@
                 (use case) description:
             </p>
 
-            <ol class="list-decimal pl-5">
+            <ol class="list-decimal pl-20 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     The WeatherStation object class provides the basic interface of
                     the weather station with its environment. Its operations reflect
@@ -473,7 +481,8 @@
                 <figure class="text-center">
                     <img
                         src="https://d2vlcm61l7u1fs.cloudfront.net/media%2F771%2F77158d1e-f968-4378-b5b2-d9c3e0bdaff5%2FphpVV9v4I.png"
-                        class="max-w-full h-auto max-h-96 mx-auto" alt="Weather Station Diagram" />
+                        class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+                        style="max-width: 50%; height: auto;">
                 </figure>
 
                 <li>
@@ -493,7 +502,7 @@
                 </li>
             </ol>
 
-            <p>
+            <p class="paragraph">
                 You use knowledge of the application domain to identify other objects,
                 attributes, and services. We know that weather stations are often located
                 in remote places and include various instruments that sometimes go wrong.
@@ -503,7 +512,7 @@
                 station should have its own identifier.
             </p>
 
-            <p>
+            <p class="paragraph">
                 At this stage in the design process, you should focus on the objects
                 themselves, without thinking about how these might be implemented. Once
                 you have identified the objects, you then refine the object design. You
@@ -525,9 +534,9 @@
 
   <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-8 m-5 text-base leading-7">
-      <h3 id="design models" class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.1.4 Design Models</h3>
-      <p>
+    <article id="design models" class="text-[#996515] border rounded-lg p-8 m-5 text-base leading-7 scroll-mt-30">
+      <h3  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1.4 Design Models</h3>
+      <p class="paragraph">
         Design or system models, as I discussed in Chapter 5, show the
         objects or object classes in a system. They also show the
         associations and relationships between these entities. These models
@@ -536,11 +545,11 @@
         unnecessary detail doesn’t hide the relationships between them and
         the system requirements.
       </p>
-      <p>
+      <p class="paragraph">
         However, they also have to include enough detail for programmers to
         make implementation decisions.
       </p>
-      <p>
+      <p class="paragraph">
         Generally, you get around this type of conflict by developing models
         at different levels of detail. Where there are close links between
         requirements engineers, designers, and programmers, then abstract
@@ -551,7 +560,7 @@
         being designed in one part of an organization but implemented
         elsewhere), then more detailed models are likely to be needed.
       </p>
-      <p>
+      <p class="paragraph">
         An important step in the design process, therefore, is to decide on
         the design models that you need and the level of detail required in
         these models. This depends on the type of system that is being
@@ -563,12 +572,12 @@
         costs of the design and the time required to complete the design
         process.
       </p>
-      <p>
+      <p class="paragraph">
         When you use the UML to develop a design, you will normally develop
         two kinds of design model:
       </p>
 
-      <ol class="list-decimal pl-5">
+      <ol class="list-decimal pl-20 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           Structural models, which describe the static structure of the
           system using object classes and their relationships. Important
@@ -585,13 +594,13 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         In the early stages of the design process, I think there are three
         models that are particularly useful for adding detail to use case
         and architectural models:
       </p>
 
-      <ol class="list-decimal pl-5">
+      <ol class="list-decimal pl-20 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           Subsystem models, which show logical groupings of objects into
           coherent subsystems. These are represented using a form of class
@@ -602,7 +611,8 @@
           <img
             src="https://image1.slideserve.com/2401032/figure-7-7-sequence-diagram-describing-data-collection-l.jpg"
             alt="Sequence Diagram"
-            class="max-w-full h-auto max-h-96 mx-auto"
+            class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+            style="max-width: 50%; height: auto;"
           />
         </figure>
 
@@ -618,7 +628,7 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         A subsystem model is a useful static model as it shows how a design
         is organized into logically related groups of objects. I have
         already shown this type of model in Figure 7.4 to show the
@@ -631,7 +641,7 @@
         programmers.
       </p>
 
-      <p>
+      <p class="paragraph">
         Sequence models are dynamic models that describe, for each mode of
         interaction, the sequence of object interactions that take place.
         When documenting a design, you should produce a sequence model for
@@ -640,7 +650,7 @@
         have identified.
       </p>
 
-      <p>
+      <p class="paragraph">
         Figure 7.7 is an example of a sequence model, shown as a UML
         sequence diagram. This diagram shows the sequence of interactions
         that take place when an external system requests the summarized data
@@ -648,7 +658,7 @@
         bottom:
       </p>
 
-      <ol class="list-decimal pl-5">
+      <ol class="list-decimal pl-20 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           The SatComms object receives a request from the weather
           information system to collect a weather report from a weather
@@ -687,18 +697,12 @@
 </section>
 
 
-        
-
-
-
-
-
    <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-8 m-5 text-base leading-7">
-      <h3 id="interface" class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.1.5 Interface Specification</h3>
+    <article id="interface" class="text-[#996515] border rounded-lg p-8 m-5 text-base leading-7 scroll-mt-30">
+      <h3 class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.1.5 Interface Specification</h3>
 
-      <p>
+      <p class="paragraph">
         An important part of any design process is the specification of the
         interfaces between the components in the design. You need to specify
         interfaces so that objects and subsystems can be designed in
@@ -706,7 +710,7 @@
         other objects may assume that interface will be implemented.
       </p>
 
-      <p>
+      <p class="paragraph">
         Interface design is concerned with specifying the detail of the
         interface to an object or to a group of objects. This means defining
         the signatures and semantics of
@@ -716,11 +720,12 @@
         <img
           src="https://image1.slideserve.com/2401032/figure-7-9-weather-station-interfaces-l.jpg"
           alt="Weather Station Interfaces"
-          class="max-w-full h-auto max-h-96 mx-auto"
+          class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110 "
+          style="max-width: 50%; height: auto;"
         />
       </figure>
 
-      <p>
+      <p class="paragraph">
         the services that are provided by the object or by a group of
         objects. Interfaces can be specified in the UML using the same
         notation as a class diagram. However, there is no attribute section
@@ -742,7 +747,7 @@
         characteristics of the objects.
       </p>
 
-      <p>
+      <p class="paragraph">
         There is not a simple 1:1 relationship between objects and
         interfaces. The same object may have several interfaces, each of
         which is a viewpoint on the methods that it provides. This is
@@ -751,7 +756,7 @@
         objects may all be accessed through a single interface.
       </p>
 
-      <p>
+      <p class="paragraph">
         Figure 7.9 shows two interfaces that may be defined for the weather
         station. The left-hand interface is a reporting interface that
         defines the operation names that are used to generate weather and
@@ -767,16 +772,12 @@
 </section>
 
 
-
-
-
-
-
  <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-10 m-5 text-base leading-7">
-      <h3 id="design patterns" class=" mb-4 border-b-2 pb-2 text-2xl font-semibold">7.2 Design patterns</h3>
-      <p>
+    <article id="design patterns" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+      <h3  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.2 Design patterns</h3>
+      
+      <p class="paragraph">
         Design patterns were derived from ideas put forward by Christopher
         Alexander (Alexander et al., 1977), who suggested that there were
         certain common patterns of building design that were inherently
@@ -787,38 +788,40 @@
 
       
       <figure class="text-center my-4">
-        <img src="Pictures/comment.png" alt="" class="max-w-[80%] mx-auto" />
+        <img src="./Pictures/comment.png" alt=""
+        class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-105"
+        style="max-width: 50%; height: auto;">
       </figure>
 
-      <p>
+      <p class="paragraph">
         The pattern is not a detailed specification. Rather, you can think of it as a description of accumulated wisdom
         and experience, a well-tried solution to a common problem.
       </p>
 
-      <p>
+      <p class="paragraph">
         A quote from the Hillside Group web site (http://hillside.net), which is dedicated to maintaining information about patterns, encapsulates their role in reuse:
       </p>
 
-      <p>
+      <p class="paragraph">
         Patterns and Pattern Languages are ways to describe best practices, good designs, and capture experience in a way that it is possible for others to reuse this experience.
       </p>
 
-      <p>
+      <p class="paragraph">
         Patterns have made a huge impact on object-oriented software design. As well as being tested solutions to common problems, they have become a vocabulary for talking about a design. You can therefore explain your design by describing the patterns that you have used.
         This is particularly true for the best-known design patterns that were originally described by the ‘Gang of Four’ in their patterns book, (Gamma et al., 1995).
         Other particularly important pattern descriptions are those published in a series of books by authors from Siemens, a large European technology company (Buschmann et al., 1996; Buschmann et al., 2007a; Buschmann et al., 2007b; Kircher and Jain, 2004; Schmidt et al., 2000).
       </p>
 
-      <p>
+      <p class="paragraph">
         Design patterns are usually associated with object-oriented design. Published patterns often rely on object characteristics such as inheritance and polymorphism to provide generality. However, the general principle of encapsulating experience in a pattern is one that is equally applicable to any kind of software design. 
         So, you could have configuration patterns for COTS systems. Patterns are a way of reusing the knowledge and experience of other designers.
       </p>
 
-      <p>
+      <p class="paragraph">
         The four essential elements of design patterns were defined by the ‘Gang of Four’ in their patterns book:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>A name that is a meaningful reference to the pattern.</li>
         <li>
           A description of the problem area that explains when the pattern
@@ -839,28 +842,31 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         Gamma and his co-authors break down the problem description into motivation (a description of why the pattern is useful) and applicability (a description of situations in which the pattern may be used). Under the description of the solution, they describe the pattern structure, participants, collaborations, and implementation.
       </p>
 
-      <p>
+      <p class="paragraph">
         To illustrate pattern description, I use the Observer pattern, taken from the book by Gamma et al. (Gamma et al., 1995). This is shown in Figure 7.10. In my description, I use the four essential description elements and also include a brief statement of what the pattern can do. This pattern can be used in situations where different presentations of an object’s state are required. It separates the object that must be displayed from the different forms of presentation. This is illustrated in Figure 7.11, which shows two graphical presentations of the same data set.
       </p>
 
-      <p>
+      <p class="paragraph">
         Graphical representations are normally used to illustrate the object classes in patterns and their relationships. These supplement the pattern description and add detail to the solution description. Figure 7.12 is the representation in UML of the Observer pattern.
       </p>
 
      
       <figure class="text-center my-4">
-        <img src="Pictures/piktur.png" alt="" class="max-w-[80%] mx-auto" />
+        <img src="Pictures/piktur.png" alt=""
+        class="mx-auto my-4 transition-transform duration-300 ease-in-out hover:scale-110"
+        style="max-width: 30%; height: auto;"/>
+       
       </figure>
 
-      <p>
+      <p class="paragraph">
         To use patterns in your design, you need to recognize that any design problem you are facing may have an associated pattern that can be applied. Examples of such problems, documented in the ‘Gang of Four’s original patterns book, include:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           Tell several objects that the state of some other object has
           changed (Observer pattern).
@@ -880,7 +886,7 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         Patterns support high-level, concept reuse. When you try to reuse
         executable components you are inevitably constrained by detailed
         design decisions that have been made by the implementers of these
@@ -893,7 +899,7 @@
         implementation to suit the system that you are developing.
       </p>
 
-      <p>
+      <p class="paragraph">
         When you start designing a system, it can be difficult to know, in
         advance, if you will need a particular pattern. Therefore, using
         patterns in a design process often involves developing a design,
@@ -913,15 +919,12 @@
 </section>
 
 
-
-
-
   <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-10 m-5 text-base leading-7">
-      <h3 id="implementation" class="mb-4 border-b-2 pb-2 text-2xl font-semibold">7.3 Implementation Issues</h3>
+    <article id="implementation" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+      <h3 class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.3 Implementation Issues</h3>
 
-      <p>
+      <p class="paragraph">
         Software engineering includes all of the activities involved in
         software development from the initial requirements of the system
         through to maintenance and management of the deployed system. A
@@ -933,7 +936,7 @@
         organization.
       </p>
 
-      <p>
+      <p class="paragraph">
         I assume that most readers of this book will understand programming
         principles and will have some programming experience. As this
         chapter is intended to offer a language-independent approach, I
@@ -944,7 +947,7 @@
         are:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 mt-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           <strong>Reuse:</strong> Most modern software is constructed by reusing existing
           components or systems. When you are developing software, you
@@ -972,17 +975,12 @@
 
 
 
-          
-
-
-
-
          <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-10 m-5 text-base leading-7">
-      <h3 id="configuration" class=" mb-4 border-b-2 pb-2 text-2xl font-semibold">7.3.2 Configuration Management</h3>
+    <article id="configuration" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+      <h3 class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.3.2 Configuration Management</h3>
 
-      <p>
+      <p class="paragraph">
         In software development, change happens all the time, so change
         management is absolutely essential. When a team of people are
         developing software, you have to make sure that team members don’t
@@ -996,7 +994,7 @@
         system or component.
       </p>
 
-      <p>
+      <p class="paragraph">
         Configuration management is the name given to the general process of
         managing a changing software system. The aim of configuration
         management is to support the system integration process so that all
@@ -1006,7 +1004,7 @@
         fundamental configuration management activities:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           <strong>Version management:</strong> Support is provided to keep track of the
           different versions of software components. Version management
@@ -1027,7 +1025,7 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         Software configuration management tools support each of the above
         activities. These tools may be designed to work together in a
         comprehensive change management system, such as ClearCase (Bellagio
@@ -1037,7 +1035,7 @@
         integrated through a common code repository.
       </p>
 
-      <p>
+      <p class="paragraph">
         Alternatively, separate tools, installed in an integrated
         development environment, may be used. Version management may be
         supported using a version management system such as Subversion
@@ -1050,7 +1048,7 @@
         not these have been fixed.
       </p>
 
-      <p>
+      <p class="paragraph">
         Because of its importance in professional software engineering, I
         discuss change and configuration management in more detail in
         Chapter 25.
@@ -1062,10 +1060,10 @@
 
           <section>
   <div class="space-y-8">
-    <article class="border rounded-lg p-10 m-5 text-base leading-7">
-      <h3 id="host-target" class=" mb-4 border-b-2 pb-2 text-2xl font-semibold">7.3.3 Host-target Development</h3>
+    <article id="host-target" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
+      <h3  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.3.3 Host-target Development</h3>
 
-      <p>
+      <p class="paragraph">
         Most software development is based on a host-target model. Software
         is developed on one computer (the host), but runs on a separate
         machine (the target). More generally, we can talk about a
@@ -1075,7 +1073,7 @@
         for development platforms, an interactive development environment.
       </p>
 
-      <p>
+      <p class="paragraph">
         Sometimes, the development and execution platforms are the same,
         making it possible to develop the software and test it on the same
         machine. More commonly, however, they are different so that you need
@@ -1083,7 +1081,7 @@
         testing or run a simulator on your development machine.
       </p>
 
-      <p>
+      <p class="paragraph">
         Simulators are often used when developing embedded systems. You
         simulate hardware devices, such as sensors, and the events in the
         environment in which the system will be deployed. Simulators speed
@@ -1094,7 +1092,7 @@
         hardware architectures.
       </p>
 
-      <p>
+      <p class="paragraph">
         If the target system has installed middleware or other software that
         you need to use, then you need to be able to test the system using
         that software. It may be impractical to install that software on
@@ -1104,12 +1102,12 @@
         to test the system.
       </p>
 
-      <p>
+      <p class="paragraph">
         A software development platform should provide a range of tools to
         support software engineering processes. These may include:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           <strong>An integrated compiler and syntax-directed editing system:</strong> Allows you to create, edit, and compile code.
         </li>
@@ -1123,7 +1121,7 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         As well as these standard tools, your development system may include
         more specialized tools such as static analyzers (discussed in
         Chapter 15). Normally, development environments for teams also
@@ -1132,7 +1130,7 @@
         management.
       </p>
 
-      <p>
+      <p class="paragraph">
         Software development tools are often grouped to create an integrated
         development environment (IDE). An IDE is a set of software tools
         that supports different aspects of software development, within some
@@ -1143,7 +1141,7 @@
         language-support tools.
       </p>
 
-      <p>
+      <p class="paragraph">
         A general-purpose IDE is a framework for hosting software tools that
         provides data management facilities for the software being
         developed, and integration mechanisms, that allow tools to work
@@ -1157,7 +1155,7 @@
         engineering using C.
       </p>
 
-      <p>
+      <p class="paragraph">
         As part of the development process, you need to make decisions about
         how the developed software will be deployed on the target platform.
         This is straightforward for embedded systems, where the target is
@@ -1167,7 +1165,7 @@
         decision are:
       </p>
 
-      <ol class="list-decimal ml-5 space-y-2">
+      <ol class="list-decimal ml-5 space-y-2 md:text-xl lg:text-xl xl:text-xl p-2">
         <li>
           <strong>The hardware and software requirements of a component:</strong> If a component is designed for a specific hardware architecture, or
           relies on some other software system, it must obviously be
@@ -1189,13 +1187,13 @@
         </li>
       </ol>
 
-      <p>
+      <p class="paragraph">
         You can document your decisions on hardware and software deployment
         using UML deployment diagrams, which show how software components
         are distributed across hardware platforms.
       </p>
 
-      <p>
+      <p class="paragraph">
         If you are developing an embedded system, you may have to take into
         account target characteristics, such as its physical size, power
         capabilities, the need for realtime responses to sensor events, the
@@ -1209,11 +1207,11 @@
 
          <section>
     <div class="space-y-8">
-        <article class="border rounded-lg p-10 m-5 text-base leading-7">
+        <article id="open source" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading- scroll-mt-30">
             <section>
-                <h1 id="open source" class=" mb-4 border-b-2 pb-2 font-bold text-xl">7.4 Open Source Development</h1>
+                <h1  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.4 Open Source Development</h1>
             </section>
-            <p>
+            <p class="paragraph">
                 Open source development is an approach to software development in
                 which the source code of a software system is published and
                 volunteers are invited to participate in the development process
@@ -1224,7 +1222,7 @@
                 code would be controlled and developed by a small core group, rather
                 than users of the code.
             </p>
-            <p>
+            <p class="paragraph">
                 Open source software extended this idea by using the Internet to
                 recruit a much larger population of volunteer developers. Many of
                 them are also users of the code. In principle at least, any
@@ -1233,7 +1231,7 @@
                 successful open source systems still rely on a core group of
                 developers who control changes to the software.
             </p>
-            <p>
+            <p class="paragraph">
                 The best-known open source product is, of course, the Linux
                 operating system which is widely used as a server system and,
                 increasingly, as a desktop environment. Other important open source
@@ -1243,7 +1241,7 @@
                 on open source products. There are thousands of other, lesser known
                 open source systems and components that may also be used.
             </p>
-            <p>
+            <p class="paragraph">
                 It is usually fairly cheap or free to acquire open source software.
                 You can normally download open source software without charge.
                 However, if you want documentation and support, then you may have to
@@ -1256,11 +1254,11 @@
                 repaired more quickly than is usually possible with proprietary
                 software.
             </p>
-            <p>
+            <p class="paragraph">
                 For a company involved in software development, there are two open
                 source issues that have to be considered:
             </p>
-            <ol class="list-decimal pl-6">
+            <ol class="list-decimal pl-6 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     Should the product that is being developed make use of open source
                     components?
@@ -1270,18 +1268,18 @@
                     development?
                 </li>
             </ol>
-            <p>
+            <p class="paragraph">
                 The answers to these questions depend on the type of software that
                 is being developed and the background and experience of the
                 development team.
             </p>
-            <p>
+            <p class="paragraph">
                 If you are developing a software product for sale, then time to
                 market and reduced costs are critical. If you are developing in a
                 domain in which there are high-quality open source systems
                 available, you can save time and money by using these systems.
             </p>
-            <p>
+            <p class="paragraph">
                 However, if you are developing software to a specific set of
                 organizational requirements, then using open source components may
                 not be an option. You may have to integrate your software with
@@ -1290,7 +1288,7 @@
                 modify the open source system rather than redevelop the
                 functionality that you need.
             </p>
-            <p>
+            <p class="paragraph">
                 More and more product companies are using an open source approach to
                 development. Their business model is not reliant on selling a
                 software product but rather on selling support for that product.
@@ -1300,7 +1298,7 @@
                 really only applicable for general software products rather than
                 specific organizational applications.
             </p>
-            <p>
+            <p class="paragraph">
                 Many companies believe that adopting an open source approach will
                 reveal confidential business knowledge to their competitors and so
                 are reluctant to adopt this development model. However, if you are
@@ -1308,7 +1306,7 @@
                 may reassure customers that they will be able to support the
                 software if your company goes out of business.
             </p>
-            <p>
+            <p class="paragraph">
                 Publishing the source code of a system does not mean that people
                 from the wider community will necessarily help with its development.
                 Most successful open source products have been platform products
@@ -1323,11 +1321,11 @@
 
 <section>
     <div class="space-y-8">
-        <article class="border rounded-lg p-10 m-5 text-base leading-7">
+        <article id="Open Source Licensing" class="text-[#996515] border rounded-lg p-10 m-5 text-base leading-7 scroll-mt-30">
             <section>
-                <h1 id="Open Source Licensing" class="mb-4 border-b-2 pb-2 font-bold text-xl">7.4.1 Open Source Licensing</h1>
+                <h1  class="text-center mb-4 border-b-2 pb-2 font-bold text-2xl md:text-xl lg:text-2xl xl:text-3xl">7.4.1 Open Source Licensing</h1>
             </section>
-            <p>
+            <p class="paragraph">
                 Although a fundamental principle of open-source development is that
                 source code should be freely available, this does not mean that
                 anyone can do as they wish with that code. Legally, the developer of
@@ -1340,11 +1338,11 @@
                 used without this restriction. The developed systems may be
                 proprietary and sold as closed source systems.
             </p>
-            <p>
+            <p class="paragraph">
                 Most open source licenses are derived from one of three general
                 models:
             </p>
-            <ol class="list-decimal pl-6">
+            <ol class="list-decimal pl-6 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     The GNU General Public License (GPL). This is a so-called
                     ‘reciprocal’ license that, simplistically, means that if you use
@@ -1367,7 +1365,7 @@
                     creator of the code.
                 </li>
             </ol>
-            <p>
+            <p class="paragraph">
                 Licensing issues are important because if you use open-source
                 software as part of a software product, then you may be obliged by
                 the terms of the license to make your own product open source. If
@@ -1375,7 +1373,7 @@
                 secret. This means that you may wish to avoid using GPL-licensed
                 open source software in its development.
             </p>
-            <p>
+            <p class="paragraph">
                 If you are building software that runs on an open source platform,
                 such as Linux, then licenses are not a problem. However, as soon as
                 you start including open source components in your software you need
@@ -1383,7 +1381,7 @@
                 and their license conditions. Bayersdorfer (2007) suggests that
                 companies managing projects that use open source should:
             </p>
-            <ol class="list-decimal pl-6">
+            <ol class="list-decimal pl-6 md:text-xl lg:text-xl xl:text-xl p-2">
                 <li>
                     Establish a system for maintaining information about open source
                     components that are downloaded and used. You have to keep a copy
@@ -1419,7 +1417,7 @@
                     support their development.
                 </li>
             </ol>
-            <p>
+            <p class="paragraph">
                 The business model of software is changing. It is becoming
                 increasingly difficult to build a business by selling specialized
                 software systems. Many companies prefer to make their software open
@@ -1439,22 +1437,22 @@
   <div class="c7footer2">
 
     <a href="https://web.facebook.com/adziel.macalindong" target="_blank" aria-label="Facebook">
-      <img src="/Pictures/facebook.png" alt="Facebook"
+      <img src="./Pictures/facebook.png" alt="Facebook"
         class="c7icon">
     </a>
 
     <a href="" target="_blank" aria-label="Instagram">
-      <img src="/Pictures/instagram.png" alt="Instagram"
+      <img src="./Pictures/instagram.png" alt="Instagram"
         class="c7icon">
     </a>
 
     <a href="23-12778@g.batstate-u.edu.ph" aria-label="Email">
-      <img src="/Pictures/mail.png" alt="Email"
+      <img src="./Pictures/mail.png" alt="Email"
         class="c7icon">
     </a>
 
     <a href="tel:+63XXXXXXXXXX" aria-label="Telephone">
-      <img src="/Pictures/telephone.png" alt="Telephone"
+      <img src="./Pictures/telephone.png" alt="Telephone"
         class="c7icon">
     </a>
   </div>

@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
-.sour-gummy {
-  font-family: "Sour Gummy", sans-serif;
+.montserrat {
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "wdth" 100;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .figure {
     @apply text-center mx-auto h-[300px]
@@ -89,3 +91,8 @@ html {
   @apply grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-12 justify-items-center mt-10;
 }
 
+/* src emman */
+
+.paragraph{
+    @apply md:text-xl lg:text-xl xl:text-xl indent-5 p-2 
+}
